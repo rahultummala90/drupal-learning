@@ -1,0 +1,18 @@
+# SQL dumps
+*.sql
+
+# Drupal vendor
+drupal/vendor/
+
+# Drupal files (uploads, cache)
+drupal/web/sites/default/files/
+
+# Drupal settings with credentials
+drupal/web/sites/default/settings.php
+drupal/web/sites/default/services.yml
+
+# Compiled twig cache
+drupal/web/sites/default/files/php/
+
+# OS
+.DS_Store
