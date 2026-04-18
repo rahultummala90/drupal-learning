@@ -1,0 +1,29 @@
+uuid: 708bb935-f39a-4152-91cf-b2611c39126e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_news_files
+    - media.type.document
+    - media.type.image
+id: media.image.field_news_files
+field_name: field_news_files
+entity_type: media
+bundle: image
+label: 'News Files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

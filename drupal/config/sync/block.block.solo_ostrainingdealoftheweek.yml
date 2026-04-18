@@ -1,0 +1,30 @@
+uuid: e77052c2-4dac-42bc-9479-260b5f0e41ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:downloadable_pdf:61589f90-800c-471e-bf85-67f5fdffcdf1'
+  module:
+    - block_content
+    - system
+  theme:
+    - solo
+id: solo_ostrainingdealoftheweek
+theme: solo
+region: primary_sidebar_menu
+weight: -8
+provider: null
+plugin: 'block_content:61589f90-800c-471e-bf85-67f5fdffcdf1'
+settings:
+  id: 'block_content:61589f90-800c-471e-bf85-67f5fdffcdf1'
+  label: 'OSTraining deal of the week'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /business-directory/ostraining

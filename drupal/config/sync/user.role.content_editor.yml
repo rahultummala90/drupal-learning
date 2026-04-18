@@ -1,0 +1,104 @@
+uuid: 2dbc7be0-3f35-46a1-b4fb-b95d3a6e55e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.business
+    - node.type.events
+    - node.type.locations
+    - node.type.page
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
+  module:
+    - comment
+    - content_moderation
+    - contextual
+    - file
+    - media
+    - node
+    - path
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
+id: content_editor
+label: 'Content editor'
+weight: -8
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create audio media'
+  - 'create business content'
+  - 'create document media'
+  - 'create events content'
+  - 'create image media'
+  - 'create locations content'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create video media'
+  - 'delete any article content'
+  - 'delete any business content'
+  - 'delete any events content'
+  - 'delete any locations content'
+  - 'delete any page content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own business content'
+  - 'delete own events content'
+  - 'delete own files'
+  - 'delete own locations content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any article content'
+  - 'edit any business content'
+  - 'edit any events content'
+  - 'edit any locations content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own business content'
+  - 'edit own comments'
+  - 'edit own events content'
+  - 'edit own locations content'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert business revisions'
+  - 'revert events revisions'
+  - 'revert locations revisions'
+  - 'revert page revisions'
+  - 'schedule publishing of media'
+  - 'schedule publishing of nodes'
+  - 'schedule publishing of taxonomy_term'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition create_new_draft'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view article revisions'
+  - 'view business revisions'
+  - 'view events revisions'
+  - 'view latest version'
+  - 'view locations revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view scheduled content'
+  - 'view scheduled media'
+  - 'view scheduled taxonomy_term'
+  - 'view the administration theme'

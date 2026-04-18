@@ -1,0 +1,10 @@
+uuid: f3175b3a-5026-432c-b806-5178be793924
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pQP5iQy4SdhAMVcjDUncCfkJmTofnHVtXrsMzx4k6Yk
+id: basic
+label: '3 column block type'
+revision: true
+description: 'add 3 media items'

@@ -1,0 +1,25 @@
+uuid: bef6a653-873f-4563-a6c2-a16c94b7bb0b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:08707135-f1c5-4306-a202-d98c69a4afcd'
+  module:
+    - block_content
+  theme:
+    - solo
+id: solo_3columntest_2
+theme: solo
+region: top_first
+weight: -9
+provider: null
+plugin: 'block_content:08707135-f1c5-4306-a202-d98c69a4afcd'
+settings:
+  id: 'block_content:08707135-f1c5-4306-a202-d98c69a4afcd'
+  label: '3 column test'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

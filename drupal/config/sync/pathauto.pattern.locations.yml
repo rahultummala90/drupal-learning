@@ -1,0 +1,22 @@
+uuid: 113a842a-8b6b-4c0c-a8c5-7eebc5752873
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: locations
+label: Locations
+type: 'canonical_entities:node'
+pattern: 'location/[node:title]'
+selection_criteria:
+  b8895108-8c7e-41f8-9851-695e02ba5f1c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b8895108-8c7e-41f8-9851-695e02ba5f1c
+    context_mapping:
+      node: node
+    bundles:
+      locations: locations
+selection_logic: and
+weight: -5
+relationships: {  }

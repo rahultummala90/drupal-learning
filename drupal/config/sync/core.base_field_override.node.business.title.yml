@@ -1,0 +1,18 @@
+uuid: 2d8f963d-b785-427f-b6ba-b340bfec856d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.business
+id: node.business.title
+field_name: title
+entity_type: node
+bundle: business
+label: Business
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

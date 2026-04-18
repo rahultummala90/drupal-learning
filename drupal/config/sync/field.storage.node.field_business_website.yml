@@ -1,0 +1,19 @@
+uuid: afa80625-65d9-4709-8d8a-1559e22151dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_business_website
+field_name: field_business_website
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

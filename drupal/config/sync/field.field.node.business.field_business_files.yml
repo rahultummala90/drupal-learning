@@ -1,0 +1,29 @@
+uuid: e8961fd6-eadc-42ec-8a98-cbd8b7780390
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_files
+    - media.type.document
+    - node.type.business
+id: node.business.field_business_files
+field_name: field_business_files
+entity_type: node
+bundle: business
+label: 'Business Files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

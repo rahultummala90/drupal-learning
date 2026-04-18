@@ -1,0 +1,8 @@
+uuid: 8070e29c-9feb-40a7-b2b1-32ee51311dd6
+langcode: en
+status: true
+dependencies: {  }
+id: join_block
+label: 'Join Block'
+revision: false
+description: 'You should join our site.'

@@ -1,0 +1,19 @@
+uuid: 7c8e3ec4-eac1-4cba-8d11-e5cc5aa23184
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_news_files
+field_name: field_news_files
+entity_type: media
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 3e011943-5a74-45a5-8da6-0298ed723a17
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.downloadable_pdf
+    - field.storage.block_content.field_downlodable_pdf
+    - media.type.document
+id: block_content.downloadable_pdf.field_downlodable_pdf
+field_name: field_downlodable_pdf
+entity_type: block_content
+bundle: downloadable_pdf
+label: 'Downlodable PDF'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

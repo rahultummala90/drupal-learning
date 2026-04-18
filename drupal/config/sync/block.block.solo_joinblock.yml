@@ -1,0 +1,38 @@
+uuid: 275bcad5-81c4-4290-8446-21a217acf0bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b190a930-6b27-4014-99e4-56037fdc22d0'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - solo
+id: solo_joinblock
+theme: solo
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:b190a930-6b27-4014-99e4-56037fdc22d0'
+settings:
+  id: 'block_content:b190a930-6b27-4014-99e4-56037fdc22d0'
+  label: 'Join our website'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

@@ -1,0 +1,30 @@
+uuid: 7d9d23b0-9a17-4eed-a13c-8ba1e03a3cfb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b190a930-6b27-4014-99e4-56037fdc22d0'
+  module:
+    - block_content
+    - system
+  theme:
+    - solo
+id: solo_joinblock_2
+theme: solo
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:b190a930-6b27-4014-99e4-56037fdc22d0'
+settings:
+  id: 'block_content:b190a930-6b27-4014-99e4-56037fdc22d0'
+  label: 'Join Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

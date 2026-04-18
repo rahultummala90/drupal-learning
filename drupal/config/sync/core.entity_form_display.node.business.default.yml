@@ -1,0 +1,152 @@
+uuid: 038d74c8-8212-4b02-8bdb-231de336c488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business.body
+    - field.field.node.business.field_address
+    - field.field.node.business.field_business_category
+    - field.field.node.business.field_business_files
+    - field.field.node.business.field_business_logo
+    - field.field.node.business.field_business_phone
+    - field.field.node.business.field_business_website
+    - field.field.node.business.field_featured_business_video
+    - field.field.node.business.layout_builder__layout
+    - node.type.business
+  module:
+    - content_moderation
+    - link
+    - media_library
+    - path
+    - telephone
+    - text
+id: node.business.default
+targetEntityType: node
+bundle: business
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_business_category:
+    type: entity_reference_autocomplete
+    weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_business_files:
+    type: media_library_widget
+    weight: 128
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_business_logo:
+    type: media_library_widget
+    weight: 122
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_business_phone:
+    type: telephone_default
+    weight: 125
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_business_website:
+    type: link_default
+    weight: 124
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_featured_business_video:
+    type: media_library_widget
+    weight: 127
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true
+  publish_on: true
+  unpublish_on: true

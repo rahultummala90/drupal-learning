@@ -1,0 +1,9 @@
+uuid: fec91ca3-9cf7-4094-8262-7862cddefc85
+langcode: en
+status: true
+dependencies: {  }
+name: Events
+vid: events
+description: null
+weight: 0
+new_revision: false

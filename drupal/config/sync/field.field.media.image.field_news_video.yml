@@ -1,0 +1,29 @@
+uuid: a474a8cb-24b9-4387-b700-42c9c3ec0152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_news_video
+    - media.type.image
+    - media.type.remote_video
+id: media.image.field_news_video
+field_name: field_news_video
+entity_type: media
+bundle: image
+label: 'News Video'
+description: 'Select youtube or Vimeo video'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

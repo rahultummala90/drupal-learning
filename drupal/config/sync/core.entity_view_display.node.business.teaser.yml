@@ -1,0 +1,117 @@
+uuid: 7cade1e7-7cba-4beb-adcf-eed18e5f2e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.business.body
+    - field.field.node.business.field_address
+    - field.field.node.business.field_business_category
+    - field.field.node.business.field_business_files
+    - field.field.node.business.field_business_logo
+    - field.field.node.business.field_business_phone
+    - field.field.node.business.field_business_website
+    - field.field.node.business.field_featured_business_video
+    - field.field.node.business.layout_builder__layout
+    - image.style.250x250_thumbnail
+    - node.type.business
+  module:
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'top section'
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          d2fd434f-bf12-4c19-b374-a5efa6b92e49:
+            uuid: d2fd434f-bf12-4c19-b374-a5efa6b92e49
+            region: first
+            configuration:
+              id: 'field_block:node:business:field_business_logo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: 250x250_thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          11aaf087-f4b5-4124-acf3-ed7a864b80f7:
+            uuid: 11aaf087-f4b5-4124-acf3-ed7a864b80f7
+            region: second
+            configuration:
+              id: 'field_block:node:business:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4a9765a6-3526-405d-a176-5735d9ddf295:
+            uuid: 4a9765a6-3526-405d-a176-5735d9ddf295
+            region: second
+            configuration:
+              id: 'extra_field_block:node:business:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.business.teaser
+targetEntityType: node
+bundle: business
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_business_logo:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: 250x250_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_address: true
+  field_business_category: true
+  field_business_files: true
+  field_business_phone: true
+  field_business_website: true
+  field_featured_business_video: true
+  layout_builder__layout: true

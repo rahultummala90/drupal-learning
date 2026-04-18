@@ -1,0 +1,24 @@
+uuid: d39b20d8-6200-4c62-940e-53c53bffac3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.join_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.join_block.body
+field_name: body
+entity_type: block_content
+bundle: join_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

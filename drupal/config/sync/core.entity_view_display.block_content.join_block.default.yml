@@ -1,0 +1,22 @@
+uuid: 8e132c34-78cc-4aa3-8f22-8513cbe88ce6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.join_block
+    - field.field.block_content.join_block.body
+  module:
+    - text
+id: block_content.join_block.default
+targetEntityType: block_content
+bundle: join_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
