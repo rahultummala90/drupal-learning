@@ -4,8 +4,9 @@
 # Drupal vendor
 drupal/vendor/
 
-# Drupal files (uploads, cache)
+# Drupal files (uploads, cache, compiled assets)
 drupal/web/sites/default/files/
+drupal/web/sites/default/files/**
 
 # Drupal settings with credentials
 drupal/web/sites/default/settings.php
