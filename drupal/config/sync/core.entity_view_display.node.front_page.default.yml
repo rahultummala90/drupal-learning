@@ -1,0 +1,34 @@
+uuid: 215e0d25-efc1-494e-bf91-58b0f19ffdd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page.body
+    - node.type.front_page
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.front_page.default
+targetEntityType: node
+bundle: front_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

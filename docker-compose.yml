@@ -14,7 +14,7 @@ services:
       - drupal_net
 
   drupal:
-    image: drupal:10-php8.2-fpm
+    image: drupal:11-php8.3-fpm
     volumes:
       - ./drupal/web:/var/www/html
     environment:

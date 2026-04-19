@@ -1,0 +1,28 @@
+uuid: e8e02d8f-40e9-4122-9f68-75a8931da8a5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:welcome:03db696d-141e-46e3-8390-84962c8c913d'
+  module:
+    - block_content
+    - system
+  theme:
+    - solo
+id: solo_welcometodrupalville_2
+theme: solo
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:03db696d-141e-46e3-8390-84962c8c913d'
+settings:
+  id: 'block_content:03db696d-141e-46e3-8390-84962c8c913d'
+  label: 'Welcome To Drupalville'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /test-landing-page

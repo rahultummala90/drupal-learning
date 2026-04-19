@@ -1,0 +1,28 @@
+uuid: 52b0d4e4-f045-429a-9ff3-260b24544e8b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:7d942768-2888-4834-8db6-5899ca875cf6'
+  module:
+    - block_content
+    - system
+  theme:
+    - solo
+id: solo_frontpagebottom3
+theme: solo
+region: bottom_third
+weight: -12
+provider: null
+plugin: 'block_content:7d942768-2888-4834-8db6-5899ca875cf6'
+settings:
+  id: 'block_content:7d942768-2888-4834-8db6-5899ca875cf6'
+  label: 'Featured Image'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

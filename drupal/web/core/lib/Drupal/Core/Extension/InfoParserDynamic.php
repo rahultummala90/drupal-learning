@@ -12,24 +12,12 @@ use Drupal\Core\Serialization\Yaml;
 class InfoParserDynamic implements InfoParserInterface {
 
   /**
-   * The root directory of the Drupal installation.
-   *
-   * @var string
-   */
-  protected $root;
-
-  /**
    * InfoParserDynamic constructor.
    *
-   * @param string|null $app_root
+   * @param string $root
    *   The root directory of the Drupal installation.
    */
-  public function __construct(?string $app_root = NULL) {
-    if ($app_root === NULL) {
-      @trigger_error('Calling InfoParserDynamic::__construct() without the $app_root argument is deprecated in drupal:10.1.0 and will be required in drupal:11.0.0. See https://www.drupal.org/node/3293709', E_USER_DEPRECATED);
-      $app_root = \Drupal::hasService('kernel') ? \Drupal::root() : DRUPAL_ROOT;
-    }
-    $this->root = $app_root;
+  public function __construct(protected string $root) {
   }
 
   /**
@@ -73,11 +61,19 @@ class InfoParserDynamic implements InfoParserInterface {
     try {
       $parsed_info['core_incompatible'] = !Semver::satisfies(\Drupal::VERSION, $parsed_info['core_version_requirement']);
     }
-    catch (\UnexpectedValueException $exception) {
+    catch (\UnexpectedValueException) {
       throw new InfoParserException("The 'core_version_requirement' constraint ({$parsed_info['core_version_requirement']}) is not a valid value in $filename");
     }
-    if (isset($parsed_info['version']) && $parsed_info['version'] === 'VERSION') {
-      $parsed_info['version'] = \Drupal::VERSION;
+    if (isset($parsed_info['version'])) {
+      if ($parsed_info['version'] === 'VERSION') {
+        $parsed_info['version'] = \Drupal::VERSION;
+      }
+      elseif (!is_scalar($parsed_info['version'])) {
+        throw new InfoParserException("The 'version' value must be a scalar in $filename");
+      }
+      elseif (!is_string($parsed_info['version'])) {
+        $parsed_info['version'] = (string) $parsed_info['version'];
+      }
     }
     $parsed_info += [ExtensionLifecycle::LIFECYCLE_IDENTIFIER => ExtensionLifecycle::STABLE];
     $lifecycle = $parsed_info[ExtensionLifecycle::LIFECYCLE_IDENTIFIER];

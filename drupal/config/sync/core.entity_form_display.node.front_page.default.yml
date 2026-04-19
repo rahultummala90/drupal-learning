@@ -1,0 +1,72 @@
+uuid: 5d118290-9403-46ac-a2e4-ba21fa5a6e58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page.body
+    - node.type.front_page
+  module:
+    - content_moderation
+    - path
+    - text
+id: node.front_page.default
+targetEntityType: node
+bundle: front_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  publish_on: true
+  uid: true
+  unpublish_on: true

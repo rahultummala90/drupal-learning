@@ -1,0 +1,29 @@
+uuid: 9d1280a3-b951-4955-a000-a827d764f86a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_calendar
+  module:
+    - system
+    - views
+  theme:
+    - solo
+id: solo_views_block__event_calendar_block_1
+theme: solo
+region: bottom_second
+weight: -12
+provider: null
+plugin: 'views_block:event_calendar-block_1'
+settings:
+  id: 'views_block:event_calendar-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

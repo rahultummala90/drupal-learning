@@ -1,0 +1,28 @@
+uuid: 64351346-db23-4427-a925-c68c96816406
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:2594a1e0-2942-4ef6-aac8-76adc3cdd2d9'
+  module:
+    - block_content
+    - system
+  theme:
+    - solo
+id: solo_frontpageblock
+theme: solo
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:2594a1e0-2942-4ef6-aac8-76adc3cdd2d9'
+settings:
+  id: 'block_content:2594a1e0-2942-4ef6-aac8-76adc3cdd2d9'
+  label: 'Front Page Block'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

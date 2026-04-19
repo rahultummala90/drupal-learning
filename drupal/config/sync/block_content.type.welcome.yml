@@ -1,0 +1,8 @@
+uuid: 103e0c3b-1608-4a8a-8dc3-5deb57fb87ca
+langcode: en
+status: true
+dependencies: {  }
+id: welcome
+label: Welcome
+revision: false
+description: 'Drupalville is terrific.'
