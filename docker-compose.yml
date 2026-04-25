@@ -21,7 +21,7 @@ services:
       - DRUPAL_DATABASE_HOST=db
       - DRUPAL_DATABASE_NAME=drupal
       - DRUPAL_DATABASE_USER=drupal
-      - DRUPAL_DATABASE_PASSWORD=drupal_pass
+      - DRUPAL_DATABASE_PASSWORD=${DRUPAL_DATABASE_PASSWORD}
     depends_on:
       - db
     networks:
@@ -32,8 +32,8 @@ services:
     environment:
       MYSQL_DATABASE: drupal
       MYSQL_USER: drupal
-      MYSQL_PASSWORD: drupal_pass
-      MYSQL_ROOT_PASSWORD: root_secret
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     volumes:
       - db_data:/var/lib/mysql
     networks:

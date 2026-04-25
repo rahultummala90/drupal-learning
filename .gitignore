@@ -15,5 +15,8 @@ drupal/web/sites/default/services.yml
 # Compiled twig cache
 drupal/web/sites/default/files/php/
 
+# Environment variables
+.env
+
 # OS
 .DS_Store
